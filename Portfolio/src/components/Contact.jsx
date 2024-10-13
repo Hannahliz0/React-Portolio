@@ -7,21 +7,30 @@ const Contact = () => {
   const [message, setMessage] = useState('');
   const [error, setError] = useState('');
 
-  
   const handleSubmit = (e) => {
-    e.preventDefault(); 
+    e.preventDefault();
 
     
-    if (!name || !email || !message) {
-      setError('Please fill in all fields.');
-      return; 
+    if (!name) {
+      setError('Please include your name.');
+      return;
     }
 
-    
+    if (!email) {
+      setError('Please include your email.');
+      return;
+    }
+
+    if (!message) {
+      setError('Please include a message.');
+      return;
+    }
+
+   
     setError('');
     console.log('Form submitted:', { name, email, message });
 
-    
+   
     setName('');
     setEmail('');
     setMessage('');
@@ -64,18 +73,18 @@ const Contact = () => {
             placeholder="Your Message"
           />
         </div>
-        {error && <div style={styles.error}>{error}</div>} 
+        {error && <div style={styles.error}>{error}</div>}
         <button type="submit" style={styles.button}>Submit</button>
       </form>
     </div>
   );
 };
 
-// Styles for the component
+
 const styles = {
   container: {
-    maxWidth: '400px', 
-    margin: '50px auto', 
+    maxWidth: '400px',
+    margin: '50px auto',
     padding: '20px',
     color: 'white',
     borderRadius: '5px',
@@ -95,21 +104,21 @@ const styles = {
   label: {
     marginBottom: '5px',
     fontWeight: 'bold',
-    color: 'white', 
+    color: 'white',
   },
   input: {
     padding: '10px',
     fontSize: '16px',
     borderRadius: '4px',
     border: '1px solid #ccc',
-    width: '200%', 
+    width: '200%',
   },
   textarea: {
     padding: '10px',
     fontSize: '16px',
     borderRadius: '4px',
     border: '1px solid #ccc',
-    width: '200%', 
+    width: '200%',
     height: '200px',
   },
   error: {
@@ -124,12 +133,12 @@ const styles = {
     border: 'none',
     borderRadius: '4px',
     cursor: 'pointer',
-    transition: 'background-color 0.3s ease', 
+    transition: 'background-color 0.3s ease',
   },
 };
 
 styles.buttonHover = {
-  backgroundColor: 'blue', 
+  backgroundColor: 'blue',
 };
 
 export default Contact;

@@ -5,10 +5,10 @@ body {
     background: #142e46;
   }
   
-  /* Style for the main content excluding the header */
+  
   .main-content {
-    background-color: #526374;  /* Choose your desired background color */
-    min-height: 100vh;          /* Ensure it covers the full height */
-    padding: 20px;              /* Optional: Add some padding for spacing */
+    background-color: #526374;  
+    min-height: 100vh;          
+    padding: 20px;              
   }
 

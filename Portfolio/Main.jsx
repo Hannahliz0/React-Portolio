@@ -1,5 +1,5 @@
 
-// Correcting the imports by making the paths relative to the current directory
+
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import './Assets/bootstrap/css/bootstrap.min.css';
 import ReactDOM from 'react-dom/client';
@@ -13,9 +13,6 @@ import Header from './src/Layout/Header';
 import Footer from './src/Layout/Footer';
 
 
-
-
-// Define the accessible routes, and which components respond to which URL
 const router = createBrowserRouter([
   {
     path: '/',

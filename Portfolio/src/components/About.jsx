@@ -1,5 +1,5 @@
 import profilePic from '../styles/images/me.jpg';
-//import profilePic from '../styles/images/bizcard.PNG';
+
 
 const styles = {
   aboutStyle: {

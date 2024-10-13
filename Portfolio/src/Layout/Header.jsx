@@ -1,6 +1,6 @@
 import React from 'react';
-import NavTabs from '../components/NavTabs';  // Import the NavTabs component
-import headerImage from '../styles/images/AdobeStock_708356825.jpeg';  // Import the image
+import NavTabs from '../components/NavTabs'; 
+import headerImage from '../styles/images/AdobeStock_708356825.jpeg';  
 
 const headerStyles = {
   header: {
@@ -13,7 +13,7 @@ const headerStyles = {
     backgroundImage: `url(${headerImage})`,
     backgroundSize: 'cover',
     backgroundPosition: 'center',
-    height: '150px',  // 2 inches is approximately 192px
+    height: '150px',  
   },
   title: {
     margin: 0,
